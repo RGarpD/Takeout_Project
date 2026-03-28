@@ -103,7 +103,7 @@ public class TakeOutSimulator{
         this.customer.setMoney(remainingCustomerMoney);
 
         System.out.printf(
-                "You ordered: %s\nYou paid: %d\nYour remaining money: $%d\nThank you and enjoy your food!",
+                "%sYou paid: %d\nYour remaining money: $%d\nThank you and enjoy your food!",
                 shoppingBag.getTotalItem(), shoppingBag.getTotalPrice(), remainingCustomerMoney);
 
     }
