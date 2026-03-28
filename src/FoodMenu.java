@@ -25,7 +25,7 @@ public class FoodMenu{
     }
 
     public Food getFood(int index){
-        if(index < 0 || index > this.menu.size()){
+        if(index > 0 && index <= this.menu.size()){
         return this.menu.get(index-1);
         }else{
             System.out.println("Food Not Found");
@@ -44,5 +44,9 @@ public class FoodMenu{
             }
         }
         return this.menu.get(lowestCostIndex);
+    }
+
+    public int getSize(){
+        return this.menu.size();
     }
 }
