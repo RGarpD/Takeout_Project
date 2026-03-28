@@ -12,6 +12,8 @@ public static void main(String[] args) {
     while(true){
         try {
             money = input.nextInt();
+            input.nextLine();
+            System.out.println("Your budget is: "+money);
             if(money <= 0) {
                 System.out.println("Get some money...\nPlease enter your budget: ");
             }else if(money > 0) {
@@ -19,7 +21,7 @@ public static void main(String[] args) {
             }
         } catch (InputMismatchException e) {
             System.out.println("Please enter a number! error: "+e.getMessage());
-            input.next();
+            input.nextLine();
         }
     }
     Customer customer = new Customer(customerName,money);
